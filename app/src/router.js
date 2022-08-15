@@ -18,6 +18,11 @@ const routes = [
                 component: () => import('./components/Devices.vue')
             },
             {
+                path: "/devices",
+                name: "devices",
+                component: () => import('./pages/DisplayImage.vue')
+            },
+            {
                 path: '/devices/:id',
                 name: 'device',
                 component: () => import('./components/Device.vue')
